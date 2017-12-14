@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Arial.ttf">
+            <string>ArialMT</string>
+        </array>
+        <array key="ArialBold.ttf">
+            <string>Arial-BoldMT</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AcceptJobPopup" customModule="Swishd" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bNV-qz-viv" customClass="BlurView" customModule="Swishd" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="radious">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Sj-Gh-4zp">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uTU-Cu-EoZ" customClass="RoundView" customModule="Swishd" customModuleProvider="target">
+                            <rect key="frame" x="10" y="128" width="394" height="480"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Great to hear you want to help" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhc-Bm-tld" customClass="JPWidthLabel" customModule="Swishd" customModuleProvider="target">
+                                    <rect key="frame" x="31.666666666666657" y="27" width="331" height="26"/>
+                                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="23"/>
+                                    <color key="textColor" red="0.33333333333333331" green="0.29411764705882354" blue="0.29411764705882354" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have notified" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svl-eA-Mrh" customClass="JPWidthLabel" customModule="Swishd" customModuleProvider="target">
+                                    <rect key="frame" x="139" y="57" width="115" height="17"/>
+                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                                    <color key="textColor" red="0.33333333329999998" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nVi-Yi-Kbh" customClass="RoundView" customModule="Swishd" customModuleProvider="target">
+                                    <rect key="frame" x="10" y="87" width="374" height="140"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="J6s-kx-QDY" customClass="RoundImageView" customModule="Swishd" customModuleProvider="target">
+                                            <rect key="frame" x="66" y="28.666666666666657" width="83" height="83"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="83" id="6I4-FR-RaY"/>
+                                                <constraint firstAttribute="width" secondItem="J6s-kx-QDY" secondAttribute="height" multiplier="1:1" id="rOy-Y6-LCR"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadious">
+                                                    <real key="value" value="0.0"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="0.5"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="john" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Qu-0J-M9c" customClass="JPWidthLabel" customModule="Swishd" customModuleProvider="target">
+                                            <rect key="frame" x="179" y="59.666666666666686" width="38" height="21"/>
+                                            <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="18"/>
+                                            <color key="textColor" red="0.33333333329999998" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="J6s-kx-QDY" firstAttribute="centerY" secondItem="nVi-Yi-Kbh" secondAttribute="centerY" id="Fjl-GB-02R"/>
+                                        <constraint firstAttribute="height" constant="140" id="H2g-Hi-VZs"/>
+                                        <constraint firstItem="7Qu-0J-M9c" firstAttribute="leading" secondItem="J6s-kx-QDY" secondAttribute="trailing" constant="30" id="KYt-Li-Ft9"/>
+                                        <constraint firstItem="J6s-kx-QDY" firstAttribute="leading" secondItem="nVi-Yi-Kbh" secondAttribute="leading" constant="66" id="VXU-fn-rNN"/>
+                                        <constraint firstItem="7Qu-0J-M9c" firstAttribute="centerY" secondItem="J6s-kx-QDY" secondAttribute="centerY" id="opR-yx-rpG"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadious">
+                                            <real key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are avilable for this job." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KQ1-5l-n0x" customClass="JPWidthLabel" customModule="Swishd" customModuleProvider="target">
+                                    <rect key="frame" x="105" y="257" width="184" height="17"/>
+                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                                    <color key="textColor" red="0.33333333329999998" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If successful, your reward will be found in your Swish Wallet on delivery completion." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l9G-sx-fmK" customClass="JPWidthLabel" customModule="Swishd" customModuleProvider="target">
+                                    <rect key="frame" x="30" y="302" width="334" height="33.666666666666686"/>
+                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                                    <color key="textColor" red="0.33333333329999998" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swish will let you know janedoes123’s response in your notification. you can keep an eye on this job in your profile." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIa-zG-Ioy" customClass="JPWidthLabel" customModule="Swishd" customModuleProvider="target">
+                                    <rect key="frame" x="31" y="361.66666666666669" width="332" height="50.333333333333314"/>
+                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                                    <color key="textColor" red="0.33333333329999998" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sIp-8j-yGh" customClass="RoundButton" customModule="Swishd" customModuleProvider="target">
+                                    <rect key="frame" x="10" y="430" width="374" height="40"/>
+                                    <color key="backgroundColor" red="0.019607843140000001" green="0.52156862749999999" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="taX-Uw-cqt"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="16"/>
+                                    <state key="normal" title="OK">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadious">
+                                            <real key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="okTapWithSender:" destination="iN0-l3-epB" eventType="touchUpInside" id="0Dh-lh-0cU"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="cIa-zG-Ioy" secondAttribute="trailing" constant="31" id="2VZ-Re-5AH"/>
+                                <constraint firstAttribute="bottom" secondItem="sIp-8j-yGh" secondAttribute="bottom" constant="10" id="8hs-ly-PPh"/>
+                                <constraint firstItem="nVi-Yi-Kbh" firstAttribute="top" secondItem="svl-eA-Mrh" secondAttribute="bottom" constant="13" id="B2c-mY-vrO"/>
+                                <constraint firstItem="qhc-Bm-tld" firstAttribute="centerX" secondItem="uTU-Cu-EoZ" secondAttribute="centerX" id="D9V-XJ-uPd"/>
+                                <constraint firstAttribute="trailing" secondItem="sIp-8j-yGh" secondAttribute="trailing" constant="10" id="E5E-E8-mN3"/>
+                                <constraint firstItem="sIp-8j-yGh" firstAttribute="top" secondItem="cIa-zG-Ioy" secondAttribute="bottom" constant="18" id="EKJ-2R-oBX"/>
+                                <constraint firstItem="sIp-8j-yGh" firstAttribute="leading" secondItem="uTU-Cu-EoZ" secondAttribute="leading" constant="10" id="EgJ-Ro-xJR"/>
+                                <constraint firstAttribute="trailing" secondItem="l9G-sx-fmK" secondAttribute="trailing" constant="30" id="JdC-GM-dwr"/>
+                                <constraint firstItem="l9G-sx-fmK" firstAttribute="leading" secondItem="uTU-Cu-EoZ" secondAttribute="leading" constant="30" id="Lhk-Jn-Nio"/>
+                                <constraint firstItem="svl-eA-Mrh" firstAttribute="centerX" secondItem="qhc-Bm-tld" secondAttribute="centerX" id="Li5-gO-CVl"/>
+                                <constraint firstItem="nVi-Yi-Kbh" firstAttribute="leading" secondItem="uTU-Cu-EoZ" secondAttribute="leading" constant="10" id="MqE-fN-Qdk"/>
+                                <constraint firstItem="svl-eA-Mrh" firstAttribute="top" secondItem="qhc-Bm-tld" secondAttribute="bottom" constant="4" id="cTH-Fu-Ni4"/>
+                                <constraint firstAttribute="trailing" secondItem="nVi-Yi-Kbh" secondAttribute="trailing" constant="10" id="g4R-5j-ePF"/>
+                                <constraint firstItem="qhc-Bm-tld" firstAttribute="top" secondItem="uTU-Cu-EoZ" secondAttribute="top" constant="27" id="guE-U8-DO2"/>
+                                <constraint firstItem="cIa-zG-Ioy" firstAttribute="top" secondItem="l9G-sx-fmK" secondAttribute="bottom" constant="26" id="kn1-De-geU"/>
+                                <constraint firstItem="cIa-zG-Ioy" firstAttribute="leading" secondItem="uTU-Cu-EoZ" secondAttribute="leading" constant="31" id="rO4-uA-htB"/>
+                                <constraint firstAttribute="height" constant="480" id="wU6-Ap-0sQ"/>
+                                <constraint firstItem="KQ1-5l-n0x" firstAttribute="centerX" secondItem="uTU-Cu-EoZ" secondAttribute="centerX" id="wk0-wB-a0n"/>
+                                <constraint firstItem="KQ1-5l-n0x" firstAttribute="top" secondItem="nVi-Yi-Kbh" secondAttribute="bottom" constant="30" id="zSZ-8j-2ZY"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadious">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="uTU-Cu-EoZ" firstAttribute="centerY" secondItem="1Sj-Gh-4zp" secondAttribute="centerY" id="5Aj-Nm-Qrk"/>
+                        <constraint firstItem="uTU-Cu-EoZ" firstAttribute="leading" secondItem="1Sj-Gh-4zp" secondAttribute="leading" constant="10" id="Xmu-hl-vfI"/>
+                        <constraint firstAttribute="trailing" secondItem="uTU-Cu-EoZ" secondAttribute="trailing" constant="10" id="Zp9-gg-76w"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="bNV-qz-viv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="4Em-lZ-wgo"/>
+                <constraint firstAttribute="bottom" secondItem="bNV-qz-viv" secondAttribute="bottom" id="MxK-hh-tTF"/>
+                <constraint firstAttribute="trailing" secondItem="bNV-qz-viv" secondAttribute="trailing" id="PZk-Id-mCr"/>
+                <constraint firstItem="bNV-qz-viv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="aQU-p3-wEQ"/>
+                <constraint firstItem="1Sj-Gh-4zp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bNG-Qx-AFn"/>
+                <constraint firstAttribute="bottom" secondItem="1Sj-Gh-4zp" secondAttribute="bottom" id="nf1-6v-Wik"/>
+                <constraint firstAttribute="trailing" secondItem="1Sj-Gh-4zp" secondAttribute="trailing" id="ngu-wO-7A8"/>
+                <constraint firstItem="1Sj-Gh-4zp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="xxE-Cf-uba"/>
+            </constraints>
+            <connections>
+                <outlet property="imgUser" destination="J6s-kx-QDY" id="mmB-so-5YV"/>
+                <outlet property="lblUsername" destination="7Qu-0J-M9c" id="48m-xs-rFZ"/>
+                <outlet property="llMessage" destination="cIa-zG-Ioy" id="gg7-4q-TYM"/>
+                <outlet property="vwBackground" destination="1Sj-Gh-4zp" id="VFZ-5Y-eqf"/>
+                <outletCollection property="horizontalConstraints" destination="H2g-Hi-VZs" collectionClass="NSMutableArray" id="qRh-pK-50Q"/>
+                <outletCollection property="horizontalConstraints" destination="taX-Uw-cqt" collectionClass="NSMutableArray" id="QK4-g0-2ii"/>
+                <outletCollection property="horizontalConstraints" destination="wU6-Ap-0sQ" collectionClass="NSMutableArray" id="4Hh-Js-kcP"/>
+                <outletCollection property="horizontalConstraints" destination="guE-U8-DO2" collectionClass="NSMutableArray" id="dcr-ib-vhl"/>
+                <outletCollection property="horizontalConstraints" destination="B2c-mY-vrO" collectionClass="NSMutableArray" id="UkM-8V-NRQ"/>
+                <outletCollection property="horizontalConstraints" destination="MqE-fN-Qdk" collectionClass="NSMutableArray" id="RaL-9Y-Mjk"/>
+                <outletCollection property="horizontalConstraints" destination="g4R-5j-ePF" collectionClass="NSMutableArray" id="5iL-t8-wLd"/>
+                <outletCollection property="horizontalConstraints" destination="cTH-Fu-Ni4" collectionClass="NSMutableArray" id="qs7-Zd-e3H"/>
+                <outletCollection property="horizontalConstraints" destination="zSZ-8j-2ZY" collectionClass="NSMutableArray" id="ft7-X6-zId"/>
+                <outletCollection property="horizontalConstraints" destination="JdC-GM-dwr" collectionClass="NSMutableArray" id="Irr-mJ-NAa"/>
+                <outletCollection property="horizontalConstraints" destination="Lhk-Jn-Nio" collectionClass="NSMutableArray" id="0cw-D3-5hx"/>
+                <outletCollection property="horizontalConstraints" destination="2VZ-Re-5AH" collectionClass="NSMutableArray" id="Wpe-Bh-03i"/>
+                <outletCollection property="horizontalConstraints" destination="kn1-De-geU" collectionClass="NSMutableArray" id="las-NB-oUE"/>
+                <outletCollection property="horizontalConstraints" destination="rO4-uA-htB" collectionClass="NSMutableArray" id="aVF-Oc-j3X"/>
+                <outletCollection property="horizontalConstraints" destination="8hs-ly-PPh" collectionClass="NSMutableArray" id="wnP-ht-yq1"/>
+                <outletCollection property="horizontalConstraints" destination="E5E-E8-mN3" collectionClass="NSMutableArray" id="z9i-EQ-rD1"/>
+                <outletCollection property="horizontalConstraints" destination="EKJ-2R-oBX" collectionClass="NSMutableArray" id="meN-gH-TWM"/>
+                <outletCollection property="horizontalConstraints" destination="EgJ-Ro-xJR" collectionClass="NSMutableArray" id="olq-GU-7mX"/>
+                <outletCollection property="horizontalConstraints" destination="Xmu-hl-vfI" collectionClass="NSMutableArray" id="ypa-CC-aFS"/>
+                <outletCollection property="horizontalConstraints" destination="Zp9-gg-76w" collectionClass="NSMutableArray" id="n5N-0Z-0lk"/>
+                <outletCollection property="horizontalConstraints" destination="6I4-FR-RaY" collectionClass="NSMutableArray" id="orM-Hk-0FP"/>
+                <outletCollection property="horizontalConstraints" destination="VXU-fn-rNN" collectionClass="NSMutableArray" id="KV8-Ok-ErJ"/>
+                <outletCollection property="horizontalConstraints" destination="KYt-Li-Ft9" collectionClass="NSMutableArray" id="CMn-dc-en4"/>
+                <outletCollection property="horizontalConstraints" destination="nf1-6v-Wik" collectionClass="NSMutableArray" id="tM1-hx-r3B"/>
+            </connections>
+        </view>
+    </objects>
+</document>

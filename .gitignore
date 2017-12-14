@@ -1,0 +1,11 @@
+Swishd.xcodeproj/xcuserdata
+Swishd.xcodeproj/project.xcworkspace
+Swishd.xcodeproj/project.xcworkspace/xcuserdata
+Swishd.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+Swishd.xcworkspace
+Swishd.xcworkspace/xcuserdata
+Swishd.xcworkspace/contents.xcworkspacedata
+Pods
+*.DS_Store
+.DS_Store
+Podfile.lock

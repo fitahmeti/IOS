@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KPTabBarVC" customModule="Swishd" customModuleProvider="target">
+            <connections>
+                <outlet property="btnProfile" destination="2pI-UR-ReG" id="euJ-kk-gmy"/>
+                <outlet property="btnSearch" destination="6Cm-TW-UOp" id="cP8-Mt-0mj"/>
+                <outlet property="btnSend" destination="RcA-in-ebn" id="BX1-87-g5E"/>
+                <outlet property="tabbarView" destination="iN0-l3-epB" id="K0Y-Rl-4jw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Cm-TW-UOp" customClass="KPFixButton" customModule="Swishd" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="138" height="49"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" image="ic_tabBar_search"/>
+                    <connections>
+                        <action selector="btnTabChangeTap:" destination="-1" eventType="touchUpInside" id="Dt1-kW-4DX"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2pI-UR-ReG" customClass="KPFixButton" customModule="Swishd" customModuleProvider="target">
+                    <rect key="frame" x="138" y="0.0" width="138" height="49"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" image="ic_tabBar_user"/>
+                    <connections>
+                        <action selector="btnTabChangeTap:" destination="-1" eventType="touchUpInside" id="L1f-Dj-rte"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RcA-in-ebn" customClass="KPFixButton" customModule="Swishd" customModuleProvider="target">
+                    <rect key="frame" x="276" y="0.0" width="138" height="49"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="49" id="Y7d-cS-bOg"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" image="ic_tabBar_send"/>
+                    <connections>
+                        <action selector="btnTabChangeTap:" destination="-1" eventType="touchUpInside" id="2pI-Ub-DYh"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.88235294117647056" green="0.31764705882352939" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="RcA-in-ebn" firstAttribute="width" secondItem="6Cm-TW-UOp" secondAttribute="width" id="7V8-Kb-jC9"/>
+                <constraint firstItem="6Cm-TW-UOp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9tk-yb-SMv"/>
+                <constraint firstItem="2pI-UR-ReG" firstAttribute="width" secondItem="6Cm-TW-UOp" secondAttribute="width" id="QPX-hV-TOA"/>
+                <constraint firstItem="6Cm-TW-UOp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="SCm-CP-0fS"/>
+                <constraint firstItem="RcA-in-ebn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Trk-dB-NZS"/>
+                <constraint firstItem="2pI-UR-ReG" firstAttribute="height" secondItem="6Cm-TW-UOp" secondAttribute="height" id="YUN-0v-UaA"/>
+                <constraint firstItem="2pI-UR-ReG" firstAttribute="leading" secondItem="6Cm-TW-UOp" secondAttribute="trailing" id="ZKD-tY-6Wb"/>
+                <constraint firstAttribute="trailing" secondItem="RcA-in-ebn" secondAttribute="trailing" id="ZvL-YL-4sB"/>
+                <constraint firstItem="2pI-UR-ReG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="gEM-uJ-eUP"/>
+                <constraint firstItem="RcA-in-ebn" firstAttribute="leading" secondItem="2pI-UR-ReG" secondAttribute="trailing" id="jg5-fX-akH"/>
+                <constraint firstItem="RcA-in-ebn" firstAttribute="height" secondItem="6Cm-TW-UOp" secondAttribute="height" id="w40-mI-OP5"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-83" y="-122"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_tabBar_search" width="27" height="27"/>
+        <image name="ic_tabBar_send" width="47" height="24"/>
+        <image name="ic_tabBar_user" width="30" height="30"/>
+    </resources>
+</document>

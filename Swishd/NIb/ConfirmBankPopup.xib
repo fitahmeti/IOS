@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Arial.ttf">
+            <string>ArialMT</string>
+        </array>
+        <array key="ArialBold.ttf">
+            <string>Arial-BoldMT</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Y8q-O8-YsS" customClass="ConfirmBankPopup" customModule="Swishd" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sfx-gB-jKL" customClass="BlurView" customModule="Swishd" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="radious">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aB3-0h-8Kw">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OEL-uZ-mtD" customClass="RoundView" customModule="Swishd" customModuleProvider="target">
+                            <rect key="frame" x="10" y="234" width="394" height="268"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JzU-h9-2wU" customClass="JPWidthLabel" customModule="Swishd" customModuleProvider="target">
+                                    <rect key="frame" x="135.66666666666666" y="30" width="123.99999999999997" height="26"/>
+                                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="23"/>
+                                    <color key="textColor" red="0.33333333329999998" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please verify your account number and sort code below." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3o-jm-zqk" customClass="JPWidthLabel" customModule="Swishd" customModuleProvider="target">
+                                    <rect key="frame" x="30" y="60.333333333333314" width="334" height="33.666666666666657"/>
+                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                                    <color key="textColor" red="0.33333333329999998" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dTL-Yu-m6z" customClass="RoundView" customModule="Swishd" customModuleProvider="target">
+                                    <rect key="frame" x="13" y="116" width="368" height="75"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_bank" translatesAutoresizingMaskIntoConstraints="NO" id="2A9-oO-81L">
+                                            <rect key="frame" x="20" y="25.666666666666686" width="25" height="25"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="25" id="U7u-ng-cyo"/>
+                                                <constraint firstAttribute="width" secondItem="2A9-oO-81L" secondAttribute="height" multiplier="1:1" id="aXq-2q-Iti"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="818-7s-LUw" customClass="JPWidthLabel" customModule="Swishd" customModuleProvider="target">
+                                            <rect key="frame" x="156.33333333333334" y="20" width="39.333333333333343" height="17"/>
+                                            <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="15"/>
+                                            <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account No:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EL7-8A-6O4" customClass="JPWidthLabel" customModule="Swishd" customModuleProvider="target">
+                                            <rect key="frame" x="75" y="20.666666666666686" width="76.333333333333314" height="16"/>
+                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sort Code:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NeN-RL-uJv" customClass="JPWidthLabel" customModule="Swishd" customModuleProvider="target">
+                                            <rect key="frame" x="75" y="42.666666666666686" width="67" height="15"/>
+                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15/2001" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hrU-cD-xDP" customClass="JPWidthLabel" customModule="Swishd" customModuleProvider="target">
+                                            <rect key="frame" x="156.33333333333334" y="42" width="50.666666666666657" height="15.666666666666664"/>
+                                            <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="14"/>
+                                            <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="hrU-cD-xDP" firstAttribute="leading" secondItem="818-7s-LUw" secondAttribute="leading" id="0gg-XS-dbF"/>
+                                        <constraint firstItem="EL7-8A-6O4" firstAttribute="centerY" secondItem="818-7s-LUw" secondAttribute="centerY" id="1xv-sA-k6x"/>
+                                        <constraint firstItem="EL7-8A-6O4" firstAttribute="leading" secondItem="2A9-oO-81L" secondAttribute="trailing" constant="30" id="3A2-rD-ieX"/>
+                                        <constraint firstItem="NeN-RL-uJv" firstAttribute="leading" secondItem="EL7-8A-6O4" secondAttribute="leading" id="5Wp-7g-hwx"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="818-7s-LUw" secondAttribute="trailing" constant="15" id="6IV-dg-eve"/>
+                                        <constraint firstItem="2A9-oO-81L" firstAttribute="centerY" secondItem="dTL-Yu-m6z" secondAttribute="centerY" id="JI3-Nn-Cae"/>
+                                        <constraint firstAttribute="height" constant="75" id="LSX-7r-meT"/>
+                                        <constraint firstItem="2A9-oO-81L" firstAttribute="leading" secondItem="dTL-Yu-m6z" secondAttribute="leading" constant="20" id="Ooo-9O-1xb"/>
+                                        <constraint firstItem="818-7s-LUw" firstAttribute="top" secondItem="dTL-Yu-m6z" secondAttribute="top" constant="20" id="gvL-et-VrZ"/>
+                                        <constraint firstItem="hrU-cD-xDP" firstAttribute="top" secondItem="818-7s-LUw" secondAttribute="bottom" constant="5" id="jye-Od-1Wm"/>
+                                        <constraint firstItem="NeN-RL-uJv" firstAttribute="centerY" secondItem="hrU-cD-xDP" secondAttribute="centerY" id="nAe-g6-bdQ"/>
+                                        <constraint firstItem="818-7s-LUw" firstAttribute="leading" secondItem="EL7-8A-6O4" secondAttribute="trailing" constant="5" id="rJb-gt-tbV"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadious">
+                                            <real key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9mA-jU-NN4" customClass="RoundButton" customModule="Swishd" customModuleProvider="target">
+                                    <rect key="frame" x="13" y="206" width="180" height="41"/>
+                                    <color key="backgroundColor" red="0.019607843140000001" green="0.52156862749999999" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="9mA-jU-NN4" secondAttribute="height" multiplier="180:41" id="824-zf-qjg"/>
+                                        <constraint firstAttribute="width" constant="180" id="jmY-yx-1q6"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="15"/>
+                                    <state key="normal" title="CONFIRM">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadious">
+                                            <real key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="confirmTapWithSender:" destination="Y8q-O8-YsS" eventType="touchUpInside" id="OHC-7d-ksP"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vd3-0t-1ra" customClass="RoundButton" customModule="Swishd" customModuleProvider="target">
+                                    <rect key="frame" x="201" y="206" width="180" height="41"/>
+                                    <color key="backgroundColor" red="0.88235294119999996" green="0.31764705879999999" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="15"/>
+                                    <state key="normal" title="CANCEL">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadious">
+                                            <real key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="cancelTapWithSender:" destination="Y8q-O8-YsS" eventType="touchUpInside" id="I6K-g4-z7a"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="Vd3-0t-1ra" firstAttribute="height" secondItem="9mA-jU-NN4" secondAttribute="height" id="9Sh-PB-W7q"/>
+                                <constraint firstAttribute="trailing" secondItem="Vd3-0t-1ra" secondAttribute="trailing" constant="13" id="AGg-hy-E5G"/>
+                                <constraint firstAttribute="height" constant="268" id="AZE-Fj-7Xj"/>
+                                <constraint firstItem="g3o-jm-zqk" firstAttribute="top" secondItem="JzU-h9-2wU" secondAttribute="bottom" constant="5" id="DzW-KA-ZH2"/>
+                                <constraint firstItem="g3o-jm-zqk" firstAttribute="leading" secondItem="OEL-uZ-mtD" secondAttribute="leading" constant="30" id="Kvp-pu-gk2"/>
+                                <constraint firstAttribute="bottom" secondItem="9mA-jU-NN4" secondAttribute="bottom" constant="21" id="NSB-wj-v7q"/>
+                                <constraint firstItem="9mA-jU-NN4" firstAttribute="leading" secondItem="OEL-uZ-mtD" secondAttribute="leading" constant="13" id="NbK-2h-xD1"/>
+                                <constraint firstItem="9mA-jU-NN4" firstAttribute="top" secondItem="dTL-Yu-m6z" secondAttribute="bottom" constant="15" id="STL-W9-Ell"/>
+                                <constraint firstItem="Vd3-0t-1ra" firstAttribute="bottom" secondItem="9mA-jU-NN4" secondAttribute="bottom" id="V7h-1m-xTc"/>
+                                <constraint firstItem="dTL-Yu-m6z" firstAttribute="trailing" secondItem="Vd3-0t-1ra" secondAttribute="trailing" id="dQV-yv-0Ct"/>
+                                <constraint firstAttribute="trailing" secondItem="g3o-jm-zqk" secondAttribute="trailing" constant="30" id="o7E-I6-HiR"/>
+                                <constraint firstItem="JzU-h9-2wU" firstAttribute="centerX" secondItem="OEL-uZ-mtD" secondAttribute="centerX" id="qYj-Sc-Str"/>
+                                <constraint firstItem="dTL-Yu-m6z" firstAttribute="leading" secondItem="9mA-jU-NN4" secondAttribute="leading" id="v1I-2d-gLv"/>
+                                <constraint firstItem="JzU-h9-2wU" firstAttribute="top" secondItem="OEL-uZ-mtD" secondAttribute="top" constant="30" id="vJ5-Gx-0Tf"/>
+                                <constraint firstItem="Vd3-0t-1ra" firstAttribute="width" secondItem="9mA-jU-NN4" secondAttribute="width" id="vUH-Gc-TUi"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadious">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="OEL-uZ-mtD" firstAttribute="leading" secondItem="aB3-0h-8Kw" secondAttribute="leading" constant="10" id="Mfh-96-4Wt"/>
+                        <constraint firstAttribute="trailing" secondItem="OEL-uZ-mtD" secondAttribute="trailing" constant="10" id="Nol-2f-qST"/>
+                        <constraint firstItem="OEL-uZ-mtD" firstAttribute="centerY" secondItem="aB3-0h-8Kw" secondAttribute="centerY" id="yq7-gC-Jmd"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="aB3-0h-8Kw" firstAttribute="top" secondItem="Y8q-O8-YsS" secondAttribute="top" id="Cpl-Ze-Ofi"/>
+                <constraint firstAttribute="bottom" secondItem="aB3-0h-8Kw" secondAttribute="bottom" id="GVR-Q8-obb"/>
+                <constraint firstAttribute="trailing" secondItem="Sfx-gB-jKL" secondAttribute="trailing" id="PoQ-58-ihc"/>
+                <constraint firstItem="aB3-0h-8Kw" firstAttribute="leading" secondItem="Y8q-O8-YsS" secondAttribute="leading" id="VAp-sq-TVc"/>
+                <constraint firstItem="Sfx-gB-jKL" firstAttribute="top" secondItem="Y8q-O8-YsS" secondAttribute="top" id="agA-Gw-hDy"/>
+                <constraint firstAttribute="bottom" secondItem="Sfx-gB-jKL" secondAttribute="bottom" id="irt-mc-Xsb"/>
+                <constraint firstAttribute="trailing" secondItem="aB3-0h-8Kw" secondAttribute="trailing" id="lwS-Ch-agF"/>
+                <constraint firstItem="Sfx-gB-jKL" firstAttribute="leading" secondItem="Y8q-O8-YsS" secondAttribute="leading" id="q7G-AR-Fjp"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Osx-en-ffT"/>
+            <connections>
+                <outlet property="lblAccNo" destination="818-7s-LUw" id="fv4-UV-9Qb"/>
+                <outlet property="lblSortCode" destination="hrU-cD-xDP" id="jDg-63-g4B"/>
+                <outlet property="vwBackground" destination="aB3-0h-8Kw" id="JqG-61-EUw"/>
+                <outletCollection property="horizontalConstraints" destination="jmY-yx-1q6" collectionClass="NSMutableArray" id="m0F-OK-FhR"/>
+                <outletCollection property="horizontalConstraints" destination="AZE-Fj-7Xj" collectionClass="NSMutableArray" id="KUz-vn-p7a"/>
+                <outletCollection property="horizontalConstraints" destination="Kvp-pu-gk2" collectionClass="NSMutableArray" id="Gu7-no-rr9"/>
+                <outletCollection property="horizontalConstraints" destination="o7E-I6-HiR" collectionClass="NSMutableArray" id="nUp-Fr-lY9"/>
+                <outletCollection property="horizontalConstraints" destination="vJ5-Gx-0Tf" collectionClass="NSMutableArray" id="dJm-oR-a8r"/>
+                <outletCollection property="horizontalConstraints" destination="NSB-wj-v7q" collectionClass="NSMutableArray" id="UbP-sy-SVW"/>
+                <outletCollection property="horizontalConstraints" destination="Nol-2f-qST" collectionClass="NSMutableArray" id="ukM-yp-acD"/>
+                <outletCollection property="horizontalConstraints" destination="Mfh-96-4Wt" collectionClass="NSMutableArray" id="qC9-GJ-YiS"/>
+                <outletCollection property="horizontalConstraints" destination="U7u-ng-cyo" collectionClass="NSMutableArray" id="dfh-dS-9hd"/>
+                <outletCollection property="horizontalConstraints" destination="LSX-7r-meT" collectionClass="NSMutableArray" id="YKx-vJ-kAY"/>
+                <outletCollection property="horizontalConstraints" destination="Ooo-9O-1xb" collectionClass="NSMutableArray" id="EQt-7o-1yh"/>
+                <outletCollection property="horizontalConstraints" destination="6IV-dg-eve" collectionClass="NSMutableArray" id="tcA-EC-AtG"/>
+                <outletCollection property="horizontalConstraints" destination="gvL-et-VrZ" collectionClass="NSMutableArray" id="kqs-Qc-Vd9"/>
+                <outletCollection property="horizontalConstraints" destination="jye-Od-1Wm" collectionClass="NSMutableArray" id="9cM-Vx-QkC"/>
+                <outletCollection property="horizontalConstraints" destination="DzW-KA-ZH2" collectionClass="NSMutableArray" id="UlQ-c3-UHy"/>
+                <outletCollection property="horizontalConstraints" destination="NbK-2h-xD1" collectionClass="NSMutableArray" id="tii-d5-U4d"/>
+                <outletCollection property="horizontalConstraints" destination="STL-W9-Ell" collectionClass="NSMutableArray" id="tCb-Ed-nUh"/>
+                <outletCollection property="horizontalConstraints" destination="AGg-hy-E5G" collectionClass="NSMutableArray" id="jKr-5D-xeN"/>
+                <outletCollection property="horizontalConstraints" destination="3A2-rD-ieX" collectionClass="NSMutableArray" id="tfd-i4-rUl"/>
+                <outletCollection property="horizontalConstraints" destination="rJb-gt-tbV" collectionClass="NSMutableArray" id="mZG-r6-fXG"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_bank" width="25" height="25"/>
+    </resources>
+</document>

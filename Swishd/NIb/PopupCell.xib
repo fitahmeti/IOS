@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="popupCell" id="1OL-7m-en0" customClass="PopupCell" customModule="Swishd" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="53"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1OL-7m-en0" id="cfi-9d-EfE">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="52.666666666666664"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eRW-sl-nAW" customClass="RoundView" customModule="Swishd" customModuleProvider="target">
+                        <rect key="frame" x="26" y="8" width="323" height="36.666666666666664"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DELIVERED BY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucp-tS-zAv" customClass="JPWidthLabel" customModule="Swishd" customModuleProvider="target">
+                                <rect key="frame" x="16" y="10" width="111" height="17"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="15"/>
+                                <color key="textColor" red="0.019607843140000001" green="0.52156862749999999" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="37" id="1xB-Mg-yPJ"/>
+                            <constraint firstItem="ucp-tS-zAv" firstAttribute="centerY" secondItem="eRW-sl-nAW" secondAttribute="centerY" id="KWt-Oa-Q9k"/>
+                            <constraint firstItem="ucp-tS-zAv" firstAttribute="leading" secondItem="eRW-sl-nAW" secondAttribute="leading" constant="16" id="f6g-Fo-VZE"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadious">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="eRW-sl-nAW" secondAttribute="trailing" constant="26" id="cc4-eY-iXz"/>
+                    <constraint firstItem="eRW-sl-nAW" firstAttribute="leading" secondItem="cfi-9d-EfE" secondAttribute="leading" constant="26" id="o12-LJ-Tgs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="eRW-sl-nAW" firstAttribute="centerY" secondItem="1OL-7m-en0" secondAttribute="centerY" id="Ft0-zG-Z3W"/>
+            </constraints>
+            <connections>
+                <outlet property="lblTitle" destination="ucp-tS-zAv" id="jde-VQ-HwA"/>
+                <outletCollection property="horizontalConstraints" destination="1xB-Mg-yPJ" collectionClass="NSMutableArray" id="rlf-TI-VXg"/>
+                <outletCollection property="horizontalConstraints" destination="f6g-Fo-VZE" collectionClass="NSMutableArray" id="mgh-xA-43p"/>
+                <outletCollection property="horizontalConstraints" destination="o12-LJ-Tgs" collectionClass="NSMutableArray" id="hqs-5Q-Obq"/>
+                <outletCollection property="horizontalConstraints" destination="cc4-eY-iXz" collectionClass="NSMutableArray" id="iNN-eE-ekN"/>
+            </connections>
+            <point key="canvasLocation" x="22" y="197"/>
+        </tableViewCell>
+    </objects>
+</document>

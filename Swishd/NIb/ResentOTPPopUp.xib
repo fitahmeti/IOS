@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Arial.ttf">
+            <string>ArialMT</string>
+        </array>
+        <array key="ArialBold.ttf">
+            <string>Arial-BoldMT</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="6Aa-hc-c9Q" customClass="ResentOTPPopUp" customModule="Swishd" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bbx-rn-Hft" customClass="BlurView" customModule="Swishd" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="radious">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ylh-3M-gOd">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pez-Y7-l2Q" customClass="RoundView" customModule="Swishd" customModuleProvider="target">
+                            <rect key="frame" x="10" y="236" width="355" height="195"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Re-Send Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Na-gi-6IA" customClass="JPWidthLabel" customModule="Swishd" customModuleProvider="target">
+                                    <rect key="frame" x="99" y="40" width="157.5" height="26"/>
+                                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="23"/>
+                                    <color key="textColor" red="0.33333333329999998" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CND-Hp-5Ux" customClass="JPWidthLabel" customModule="Swishd" customModuleProvider="target">
+                                    <rect key="frame" x="83" y="78" width="189.5" height="34"/>
+                                    <string key="text">We have sent a new code to
++9145456854586</string>
+                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                                    <color key="textColor" red="0.33333333329999998" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i8p-9L-jGy" customClass="RoundButton" customModule="Swishd" customModuleProvider="target">
+                                    <rect key="frame" x="15" y="129" width="325" height="41"/>
+                                    <color key="backgroundColor" red="0.019607843140000001" green="0.52156862749999999" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="41" id="Ae6-mO-ygX"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="16"/>
+                                    <state key="normal" title="OK">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadious">
+                                            <real key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="doneTapWithSender:" destination="6Aa-hc-c9Q" eventType="touchUpInside" id="HcF-Wx-hYn"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="i8p-9L-jGy" secondAttribute="trailing" constant="15" id="47k-mK-m0w"/>
+                                <constraint firstItem="i8p-9L-jGy" firstAttribute="leading" secondItem="Pez-Y7-l2Q" secondAttribute="leading" constant="15" id="5rX-Pe-lPc"/>
+                                <constraint firstItem="CND-Hp-5Ux" firstAttribute="top" secondItem="6Na-gi-6IA" secondAttribute="bottom" constant="12" id="7eP-W0-SS7"/>
+                                <constraint firstItem="CND-Hp-5Ux" firstAttribute="centerX" secondItem="6Na-gi-6IA" secondAttribute="centerX" id="QKL-nV-oNZ"/>
+                                <constraint firstAttribute="bottom" secondItem="i8p-9L-jGy" secondAttribute="bottom" constant="25" id="UQ7-4o-ceD"/>
+                                <constraint firstAttribute="height" constant="195" id="hCv-k1-Am9"/>
+                                <constraint firstItem="6Na-gi-6IA" firstAttribute="top" secondItem="Pez-Y7-l2Q" secondAttribute="top" constant="40" id="qZd-zE-ilR"/>
+                                <constraint firstItem="6Na-gi-6IA" firstAttribute="centerX" secondItem="Pez-Y7-l2Q" secondAttribute="centerX" id="xwd-Th-LQW"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadious">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.40000000000000002" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Pez-Y7-l2Q" firstAttribute="leading" secondItem="ylh-3M-gOd" secondAttribute="leading" constant="10" id="BCb-qm-A9T"/>
+                        <constraint firstItem="Pez-Y7-l2Q" firstAttribute="centerX" secondItem="ylh-3M-gOd" secondAttribute="centerX" id="Dzt-PM-0ZF"/>
+                        <constraint firstAttribute="trailing" secondItem="Pez-Y7-l2Q" secondAttribute="trailing" constant="10" id="hWv-31-MnA"/>
+                        <constraint firstItem="Pez-Y7-l2Q" firstAttribute="centerY" secondItem="ylh-3M-gOd" secondAttribute="centerY" id="tSF-Kd-ekR"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ylh-3M-gOd" firstAttribute="leading" secondItem="6Aa-hc-c9Q" secondAttribute="leading" id="1fW-2w-YK7"/>
+                <constraint firstItem="bbx-rn-Hft" firstAttribute="top" secondItem="6Aa-hc-c9Q" secondAttribute="top" id="C6p-UM-BcQ"/>
+                <constraint firstItem="ylh-3M-gOd" firstAttribute="top" secondItem="6Aa-hc-c9Q" secondAttribute="top" id="Lug-Yi-wgg"/>
+                <constraint firstItem="bbx-rn-Hft" firstAttribute="leading" secondItem="6Aa-hc-c9Q" secondAttribute="leading" id="N4N-vW-R80"/>
+                <constraint firstAttribute="trailing" secondItem="ylh-3M-gOd" secondAttribute="trailing" id="Q94-NV-4hn"/>
+                <constraint firstAttribute="bottom" secondItem="bbx-rn-Hft" secondAttribute="bottom" id="Qak-Ix-wgK"/>
+                <constraint firstAttribute="bottom" secondItem="ylh-3M-gOd" secondAttribute="bottom" id="ThJ-Kz-T3o"/>
+                <constraint firstAttribute="trailing" secondItem="bbx-rn-Hft" secondAttribute="trailing" id="oqp-gO-LOV"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="O8g-RP-71O"/>
+            <connections>
+                <outlet property="lblMessage" destination="CND-Hp-5Ux" id="C28-AN-VrD"/>
+                <outlet property="vwBackground" destination="ylh-3M-gOd" id="pJq-gD-d5R"/>
+                <outletCollection property="horizontalConstraints" destination="Ae6-mO-ygX" collectionClass="NSMutableArray" id="Ww2-Be-jZv"/>
+                <outletCollection property="horizontalConstraints" destination="hCv-k1-Am9" collectionClass="NSMutableArray" id="PgK-xL-g4J"/>
+                <outletCollection property="horizontalConstraints" destination="7eP-W0-SS7" collectionClass="NSMutableArray" id="L3L-01-XQ2"/>
+                <outletCollection property="horizontalConstraints" destination="qZd-zE-ilR" collectionClass="NSMutableArray" id="xil-6G-iqo"/>
+                <outletCollection property="horizontalConstraints" destination="5rX-Pe-lPc" collectionClass="NSMutableArray" id="cFp-XL-SY4"/>
+                <outletCollection property="horizontalConstraints" destination="UQ7-4o-ceD" collectionClass="NSMutableArray" id="ULc-Oa-ief"/>
+                <outletCollection property="horizontalConstraints" destination="47k-mK-m0w" collectionClass="NSMutableArray" id="zfb-FF-S6L"/>
+                <outletCollection property="horizontalConstraints" destination="hWv-31-MnA" collectionClass="NSMutableArray" id="ijj-he-ZgZ"/>
+                <outletCollection property="horizontalConstraints" destination="BCb-qm-A9T" collectionClass="NSMutableArray" id="vZF-Pi-Jim"/>
+            </connections>
+        </view>
+    </objects>
+</document>

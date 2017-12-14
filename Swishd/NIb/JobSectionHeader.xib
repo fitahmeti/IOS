@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="leb-9r-LYo" customClass="HeaderView" customModule="Swishd" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pW6-dt-dzc" customClass="RoundShadowView" customModule="Swishd" customModuleProvider="target">
+                    <rect key="frame" x="10" y="5" width="394" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadious">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rbG-Xu-JEI" customClass="RoundView" customModule="Swishd" customModuleProvider="target">
+                    <rect key="frame" x="10" y="5" width="394" height="30"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Active" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="duP-lO-290" customClass="JPWidthLabel" customModule="Swishd" customModuleProvider="target">
+                            <rect key="frame" x="10" y="6.5" width="48.5" height="18"/>
+                            <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="duP-lO-290" firstAttribute="centerY" secondItem="rbG-Xu-JEI" secondAttribute="centerY" id="Cfb-u5-9Ox"/>
+                        <constraint firstItem="duP-lO-290" firstAttribute="leading" secondItem="rbG-Xu-JEI" secondAttribute="leading" constant="10" id="eFR-pf-LXV"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadious">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="pW6-dt-dzc" firstAttribute="bottom" secondItem="rbG-Xu-JEI" secondAttribute="bottom" id="7sq-9Z-OHx"/>
+                <constraint firstItem="rbG-Xu-JEI" firstAttribute="leading" secondItem="leb-9r-LYo" secondAttribute="leading" constant="10" id="KuW-Qx-DLg"/>
+                <constraint firstItem="pW6-dt-dzc" firstAttribute="trailing" secondItem="rbG-Xu-JEI" secondAttribute="trailing" id="LHg-GD-chg"/>
+                <constraint firstItem="pW6-dt-dzc" firstAttribute="top" secondItem="rbG-Xu-JEI" secondAttribute="top" id="arm-Pi-u3D"/>
+                <constraint firstItem="rbG-Xu-JEI" firstAttribute="top" secondItem="leb-9r-LYo" secondAttribute="top" constant="5" id="cls-Vq-g2I"/>
+                <constraint firstAttribute="bottom" secondItem="rbG-Xu-JEI" secondAttribute="bottom" constant="5" id="mtu-q5-8iD"/>
+                <constraint firstItem="pW6-dt-dzc" firstAttribute="leading" secondItem="rbG-Xu-JEI" secondAttribute="leading" id="r6D-bP-z6R"/>
+                <constraint firstAttribute="trailing" secondItem="rbG-Xu-JEI" secondAttribute="trailing" constant="10" id="xVL-A0-iZg"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lblJobStatus" destination="duP-lO-290" id="iqs-nk-opc"/>
+                <outlet property="viewJobStatusBg" destination="rbG-Xu-JEI" id="XcH-7S-gu5"/>
+                <outletCollection property="horizontalConstraints" destination="KuW-Qx-DLg" collectionClass="NSMutableArray" id="r11-fK-EMN"/>
+                <outletCollection property="horizontalConstraints" destination="cls-Vq-g2I" collectionClass="NSMutableArray" id="60g-64-sY5"/>
+                <outletCollection property="horizontalConstraints" destination="xVL-A0-iZg" collectionClass="NSMutableArray" id="OwS-Zq-Gmk"/>
+                <outletCollection property="horizontalConstraints" destination="mtu-q5-8iD" collectionClass="NSMutableArray" id="nw2-ez-gGy"/>
+                <outletCollection property="horizontalConstraints" destination="eFR-pf-LXV" collectionClass="NSMutableArray" id="fhc-8C-KBQ"/>
+            </connections>
+            <point key="canvasLocation" x="31" y="54"/>
+        </view>
+    </objects>
+</document>
